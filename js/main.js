@@ -59,6 +59,7 @@ let price = 0;
 let total = 0;
 
 // instead of doing a for loop for each day you could also loop the whole array and do something for each day
+// added the solution at the bottom
 arr[0].forEach(function(e){
     day += e[0] + ", ";
     total += e[1];
@@ -94,7 +95,6 @@ price = 0;
 total = 0;
 
 arr.forEach(function(date, index){
-    // console.log(date);
     date.forEach(function(e){
         day += e[0] + ", ";
         price += e[1];
@@ -110,6 +110,8 @@ arr.forEach(function(date, index){
         case 2:
             console.log(`I was a bit tired on the third day but it was so much worth it to watch the bands ${day} and I spent ${total}€ for the three days of the festival.`);
             break;
+        default:
+            console.log("something went wrong");
     }
     day = "";
     price = 0;
