@@ -24,10 +24,6 @@ $element-bg-color: rgb(248,249,250);
     column-gap: 1rem;
 }
 
-.nbs-cube-scene25 .nbs-cube:hover {
-    transform: scale(2);
-}
-
 .hero {
     height: 70vh;
     width: 100%;
@@ -73,8 +69,4 @@ $element-bg-color: rgb(248,249,250);
     width: 100%;
     background-color: rgb(20, 20, 20);
     text-align: center;
-    .footer-text {
-        margin: 0;
-        padding: .3rem 0;
-    }
 }
