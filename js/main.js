@@ -54,29 +54,29 @@ const arr = [
     [["Misty Gorilla", 120], ["Misty Gorilla", 120], ["Misty Gorilla", 120]],
     [["The Chip", 110], ["The Chip", 110], ["The Chip", 110]]
 ];
-let day = "";
+let day = [];
 let price = 0;
 let total = 0;
 
 // instead of doing a for loop for each day you could also loop the whole array and do something for each day
 // added the solution at the bottom
 arr[0].forEach(function(e){
-    day += e[0] + ", ";
+    day.push(e[0]);
     total += e[1];
 });
 console.log(`On the first day of the festival, I was lucky to watch ${day}.`);
 
-day = "";
+day = [];
 arr[1].forEach(function(e){
-    day += e[0] + ", ";
+    day.push(e[0]);
     price += e[1];
 });
 total += price;
 console.log(`Then I watched the bands ${day} on the second day and it cost me ${price}€ in total that day.`);
 
-day = "";
+day = [];
 arr[2].forEach(function(e){
-    day += e[0] + ", ";
+    day.push(e[0]);
     total += e[1];
 });
 console.log(`I was a bit tired on the third day but it was so much worth it to watch the bands ${day} and I spent ${total}€ for the three days of the festival.`);
@@ -90,13 +90,13 @@ console.log("");
 console.log("looping through the entire arr array");
 console.log("--------------------");
 
-day = "";
+day = [];
 price = 0;
 total = 0;
 
 arr.forEach(function(date, index){
     date.forEach(function(e){
-        day += e[0] + ", ";
+        day.push(e[0]);
         price += e[1];
         total += e[1];
     });
@@ -113,7 +113,7 @@ arr.forEach(function(date, index){
         default:
             console.log("something went wrong");
     }
-    day = "";
+    day = [];
     price = 0;
 });
 
